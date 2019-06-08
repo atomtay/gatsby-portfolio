@@ -1,53 +1,48 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import Header from "./header";
+import MobileHeader from './MobileHeader'
+import "./reset.css";
+import "./layout.css";
+import { Helmet } from "react-helmet"
+import favicon from './favicon.ico'
 
-import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
+	<StaticQuery
+		query={graphql`
+			query SiteTitleQuery {
+				site {
+					siteMetadata {
+						title
+					}
+				}
+			}
+		`}
+		render={data => (
+			<div id="outer-container" >
+				<Helmet
+					link={[
+						{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+					]}>
+					<meta charSet="utf-8" />
+					<title>Hi, I'm Annabelle!</title>
+					<link rel="canonical" href="https://www.atomtay.com" />
+					<link key="icon" rel="icon" href={favicon} />
+				</Helmet>
+				<Header />
+				<MobileHeader />
+
+				{children}
+			</div>
+		)}
+	/>
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+	children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

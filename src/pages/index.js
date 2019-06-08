@@ -1,21 +1,36 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from "react";
+import Header from '../components/header';
+import MobileHeader from '../components/MobileHeader'
+import '../components/layout.css'
+import { Helmet } from "react-helmet"
+import favicon from '../components/favicon.ico'
+import logo from '../images/portrait-hd-smaller.png'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+class index extends Component {
+	render() {
+		return (
+			<div>
+				<Helmet
+					link={[
+						{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+					]}>
+					<meta charSet="utf-8" />
+					<title>Hi, I'm Annabelle!</title>
+					<link rel="canonical" href="https://www.atomtay.com" />
+					<link key="icon" rel="icon" href={favicon} />
+				</Helmet>
+				<Header />
+				<MobileHeader />
+				<main style={{ marginBottom: 0 }}>
+					<img
+						src={logo}
+						className="index-portrait"
+						alt="Annabelle Thomas Taylor"
+					/>
+				</main>
+			</div>
+		);
+	}
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default index;
