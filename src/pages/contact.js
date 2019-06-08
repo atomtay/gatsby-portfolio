@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/layout";
 import opossum from '../images/contact-opossum.png'
-import resume from '../images/AnnabelleThomasTaylor-resume.jpg'
 
 class contact extends Component {
 	render() {
@@ -31,7 +30,7 @@ class contact extends Component {
 						</p>
 
 						<p><strong>
-							<a href={resume} rel="noopener">
+							<a href="https://github.com/atomtay/gatsby-portfolio/raw/master/resume.pdf" rel="noopener">
 								Download my resume (PDF)
 							</a></strong>
 						</p>
