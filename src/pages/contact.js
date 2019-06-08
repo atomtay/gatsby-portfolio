@@ -25,6 +25,11 @@ class contact extends Component {
 								linkedin.com/in/atomtay</a>
 						</p>
 						<p>
+							<strong>GitHub</strong>
+							<br /><a href="https://github.com/atomtay">
+							github.com/atomtay</a>
+						</p>
+						<p>
 							<strong>Twitter</strong>
 							<br /><a href="https://twitter.com/_atomtay">
 								@_atomtay</a>
