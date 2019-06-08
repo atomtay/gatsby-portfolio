@@ -9,7 +9,7 @@ import logo from '../images/portrait-hd-smaller.png'
 class index extends Component {
 	render() {
 		return (
-			<div>
+			<div className="index">
 				<Helmet
 					link={[
 						{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
