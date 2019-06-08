@@ -41,7 +41,7 @@ class contact extends Component {
 						</p>
 
 						<p className="resume-link">
-							<a href="" target="_blank" rel="noopener">
+							<a href="" rel="noopener">
 								<center>Download my resume (PDF)</center>
 							</a>
 						</p>
