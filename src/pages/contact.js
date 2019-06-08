@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/layout";
+import opossum from '../images/contact-opossum.png'
 
 class contact extends Component {
 	render() {
@@ -7,7 +8,7 @@ class contact extends Component {
 			<Layout>
 				<main className="contact-layout">
 					<img
-						src="https://www.annabelle-t-taylor.com/wp-content/uploads/2019/04/IMG_0453-removebg-1.png"
+						src={opossum}
 						className="contact-img"
 						alt="Get in touch!"
 					/>
@@ -35,7 +36,7 @@ class contact extends Component {
 						</p>
 
 						<p className="resume-link">
-							<a href="http://www.annabelle-t-taylor.com/wp-content/uploads/2019/05/Annabelle-Taylor-resume.pdf" target="_blank" rel="noopener">
+							<a href="" target="_blank" rel="noopener">
 								<center>Download my resume (PDF)</center>
 							</a>
 						</p>

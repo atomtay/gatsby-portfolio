@@ -14,7 +14,7 @@ class MobileHeader extends Component {
                     <Link to="/" className="menu-item">home</Link>
                     <Link to="/portfolio" className="menu-item">portfolio</Link>
                     <Link to="/about" className="menu-item">about</Link>
-                    <Link to="/blog" className="menu-item">blog</Link>
+                    <Link to="/posts" className="menu-item">posts</Link>
                     <Link to="/contact" className="menu-item">contact</Link>
                 </Menu>
                 <h1>

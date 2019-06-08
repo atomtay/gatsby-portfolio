@@ -13,7 +13,7 @@ class Header extends Component {
 					<Link to="/">home</Link>
 					<Link to="/portfolio">portfolio</Link>
 					<Link to="/about">about</Link>
-					<Link to="/blog">blog</Link>
+					<Link to="/posts">posts</Link>
 					<Link to="/contact">contact</Link>
 				</nav>
 				<h4>
