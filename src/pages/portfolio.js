@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/layout";
+import voting from '../images/votingstats.jpg'
 import portfolio from '../images/portfolio.jpg'
 import deathByData from '../images/deathbydata.jpg'
 import petz from '../images/petz-screencap.png'
@@ -14,9 +15,17 @@ class about extends Component {
             <Layout>
                 <main>
                 <PortfolioEntry 
+                        title="U.S. Voting Stats"
+                        image={voting}
+                        date="June 2019"
+                        description="A simple data visualization of U.S. voting records for the 2004, 2008, and 2012 presidential elections, broken down by state. Building off of what I learned in my Game of Thrones visualization, I used ChartJS and React for this project. The data is fed in locally through JSON files I found on GitHub."
+                        siteLink="https://votingstats.netlify.com/"
+                        repo="https://github.com/atomtay/voting-stats"
+                    />
+                <PortfolioEntry 
                         title="atomtay.com"
                         image={portfolio}
-                        date="June 2019"
+                        date="April 2019"
                         description="More properly, this is a revamp of my old portfolio website. Once upon a time, I hosted my portfolio under a different domain and displayed my content with a WordPress theme I found by happenstance. In order to more properly align with my branding, I redesigned the site layout in GatsbyJS and cut out the WordPress middleman entirely. I am now happily hosted by Netlify (and saving dozens of dollars to boot)."
                         siteLink="https://www.atomtay.com"
                         repo="https://github.com/atomtay/gatsby-portfolio"
