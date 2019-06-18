@@ -52,7 +52,7 @@ class about extends Component {
                         title="Sororitree"
                         image={sororitree}
                         date="March 2019"
-                        description="A full-stack CRUD application written with the MERN stack. I collaborated in daily scrum sessions with Cathy Le and Wesley Scholl (Konjo) to divide tasks in a feature-branching Git workflow. In particular, I built the search functionality by iterating over an array of Pet objects looking for matching substring matches. Additionally, I was responsible for writing much of the backend API and eventually launching it to Heroku."
+                        description="A full-stack CRUD application written with the MEHN (MongoDB, Express, Handlebars, Node) stack. Inspired by my time in a sorority during my undergraduate years, Sororitree is an intuitive UI to help chapters keep track of their members. When new members join a sorority, they are assigned a 'big' and are referred to as 'littles.' Chains of these big/little pairings expand and eventually begin to resemble linked lists."
                         siteLink="https://sororitree.herokuapp.com/"
                         repo="https://github.com/atomtay/sororitree"
                     />
