@@ -19,16 +19,7 @@ const Contact = () => (
           <strong>GitHub: </strong><a href="https://github.com/atomtay">github.com/atomtay</a>
         </p>
         <p>
-          <strong>Twitter: </strong><a href="https://twitter.com/_atomtay">@_atomtay</a>
-        </p>
-        <p>
           <strong>Instagram: </strong><a href="https://www.instagram.com/opossumoprogramming/">@opossumoprogramming</a>
-        </p>
-
-        <p><strong>
-          <a href="https://github.com/atomtay/gatsby-portfolio/raw/master/resume.pdf" rel="noopener">
-            Download my resume (PDF)
-          </a></strong>
         </p>
       </section>
     </main>
